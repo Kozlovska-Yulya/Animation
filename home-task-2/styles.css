@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+.block {
+  position: absolute;
+  margin: auto;
+  text-align: center;
+  line-height: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 250px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: coral;
+  animation: drop 2s;
+  transition-timing-function: ease;
+  animation-fill-mode: backwards;
+}
+
+@keyframes drop {
+  from {
+    top: -100px;
+  }
+  to {
+    top: calc(50vh - 50px);
+  }
+}
